@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour {
 	float horizontalMove = 0f;
 	public float runSpeed = 40f;
 	bool jump = false;
-	//bool crouch = true;
+	bool crouch = false;
 
 	// Use this for initialization
 	void Start () {
@@ -45,10 +45,10 @@ public class PlayerMovement : MonoBehaviour {
 		}
 			
 
-		//if(Input.GetButtonDown("Crouch"))			
-		//	crouch=true;
-		//else if(Input.GetButtonUp("Crouch"))
-		//	crouch=false;
+		if(Input.GetButtonDown("Crouch"))			
+			crouch=true;
+		else if(Input.GetButtonUp("Crouch"))
+			crouch=false;
 
 	}
 
@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour {
 		//Move Character
 		//Parametros:Movimiento por tiempo,Se agacha?,Salta?
 		// Time.fixedDeltaTime = El tiempo en que se actualiza fixedUpdate
-		controller.Move(horizontalMove * Time.fixedDeltaTime,false,jump);
+		controller.Move(horizontalMove * Time.fixedDeltaTime,crouch,jump);
 		jump = false;
 
 	}
@@ -65,4 +65,10 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		animator.SetBool("IsJumping", false);
 	}
+
+    public void OnCrouching(bool isCrouching)
+    {
+        animator.SetBool("IsCrouching", isCrouching);
+    }
+
 }
