@@ -10,7 +10,6 @@
 <li>
 <h6><span style="font-size: 13pt; font-family: 'book antiqua', palatino;"><a title="Photoshop" href="http://download2267.mediafire.com/nyrura3ucjeg/s6atddpus7wc1st/PS+CS6+By+IkerRodri.rar" target="_blank">Photoshop</a></span></h6>
 </li>
-<li><span style="font-size: 13pt; font-family: 'book antiqua', palatino;"><a title="GitHub" href="https://central.github.com/deployments/desktop/desktop/latest/win32" target="_blank">GitHub</a></span></li>
 </ol>
 <h1><span style="text-decoration: underline;"><span style="font-size: 17pt; font-family: 'arial black', 'avant garde';">Videos/Tutoriales:</span></span></h1>
 <p><span style="font-family: 'book antiqua', palatino; font-size: 13pt;"><a title="Unity Official Tutorials 2D" href="https://unity3d.com/es/learn/tutorials/s/2d-game-creation" target="_blank">Unity Official Tutorials 2D</a></span></p>
